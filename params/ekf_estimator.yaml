@@ -1,0 +1,9 @@
+output_frame: odom
+base_footprint_frame: base_footprint
+freq: 50.0
+sensor_timeout: 1.0
+odom_used: true
+imu_used: true
+vo_used: false
+wheel_odometry_validation: true
+wheel_odometry_reliability_treshold: 0.5

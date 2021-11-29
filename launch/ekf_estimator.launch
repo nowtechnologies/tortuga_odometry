@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="tortuga_odometry" type="ekf_estimator" name="ekf_estimator">
+
+    <rosparam file="$(find tortuga_odometry)/params/ekf_estimator.yaml"/>
+
+    <remap from="odom"      to="wheel_odom" />
+    <remap from="imu_data"  to="imu" />
+    <remap from="vo"        to="T265/odom/sample" />
+    <remap from="/ekf/odom" to="/odom" />
+
+  </node>
+
+</launch>
